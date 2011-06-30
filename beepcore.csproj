@@ -1,0 +1,245 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C92CF95F-1C11-4E51-B51E-87C71F97A73C}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>beepcore</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>beepcore</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="beep\core\AbortChannelException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\BEEPError.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\BEEPException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\BEEPInterruptedException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\ByteOutputDataStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\ChannelImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\CloseChannelException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\Constants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\event\ChannelEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\event\IChannelListener.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\event\ISessionListener.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\event\SessionEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\event\SessionResetEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\Frame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\IChannel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\IMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\IMessageMSG.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\InputDataStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\InputDataStreamAdapter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\IRequestHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\MessageImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\MessageMSGImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\MessageStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\MimeHeaders.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\OutputDataStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\PiggybackedMSG.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\ProfileRegistry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\ReplyListener.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\Session.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\SessionCredential.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\SessionImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\SessionTuningProperties.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\StartChannelException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\StartChannelListener.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\StartChannelProfile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\StringOutputDataStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\core\TuningProfile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\lib\ChannelPool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\lib\MessageQueue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\lib\NullReplyListener.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\lib\Reply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\lib\SharedChannel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\profile\echo\EchoProfile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\profile\IProfile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\profile\ProfileConfiguration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\transport\tcp\TCPSession.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\transport\tcp\TCPSessionCreator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\util\BufferSegment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="beep\util\HeaderParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="logging.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
